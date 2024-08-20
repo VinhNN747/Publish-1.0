@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3BB2E2;
+    --orange: #e0d209;
+    --winning-blocks: #07699b;
+}
+
+body { 
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font: 100px;
+}
+
+.container {
+    position: relative;
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3BB2E2;
+}
+
+.bigBoard {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.bigBox {
+    color: var(--orange);
+    height: 200px;
+    width: 200px;
+    padding: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+}
+
+.bigBox:nth-child(3n) {
+    border-right: none;
+}
+
+.bigBox:nth-child(6) ~ .bigBox {
+    border-bottom: none;
+}
+
+.smallBox {
+    color: var(--orange);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    cursor: pointer;
+    padding: 23px;
+}
+
+.smallBox:nth-child(3n) {
+    border-right: none;
+}
+
+.smallBox:nth-child(6) ~ .smallBox {
+    border-bottom: none;
+}
+
+button {
+    background-color: #F2C14E;
+    padding: 10px 20px;
+    color: #3BB2E2;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 200ms transform;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}

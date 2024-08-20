@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Super Tic Tac Toe </title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="x-icon" size="32x32" href="icon/gameIcon32.png">
+</head>
+<body>
+        <audio id="clickSound" src="GameAudio/mixkit-select-click-1109-1.mp3" preload="auto"></audio>
+        <audio id="smallWinSound" src="GameAudio/mixkit-quick-win-video-game-notification-269.mp3" preload="auto"></audio>
+        <audio id="bigWinSound" src="GameAudio/mixkit-completion-of-a-level-2063.mp3" preload="auto"></audio>
+        <audio id="restartButtonSound" src="GameAudio/mixkit-cool-interface-click-tone-2568.mp3" preload="auto"></audio>
+        <div class="container">
+        <h2 id="thongbao"></h2>
+        <h1 id="gameName">Super Tic Tac Toe</h1>
+        <button id="restartBtn">Restart</button>
+        <div class="bigBoard">
+                <div class="bigBox" id="0">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="1">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="2">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="3">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="4">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="5">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="6">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="7">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+                <div class="bigBox" id="8">
+                        <div class="smallBox" smallId="0"></div>
+                        <div class="smallBox" smallId="1"></div>
+                        <div class="smallBox" smallId="2"></div>
+                        <div class="smallBox" smallId="3"></div>
+                        <div class="smallBox" smallId="4"></div>
+                        <div class="smallBox" smallId="5"></div>
+                        <div class="smallBox" smallId="6"></div>
+                        <div class="smallBox" smallId="7"></div>
+                        <div class="smallBox" smallId="8"></div>
+                </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
