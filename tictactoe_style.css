@@ -59,8 +59,8 @@ h2 {
 
 .bigBox {
     color: var(--orange);
-    height: 200px;
-    width: 200px;
+    height: 33.3333333333%;
+    width: 33.3333333333%;
     padding: 23px;
     display: flex;
     flex-wrap: wrap;
@@ -148,26 +148,26 @@ button:hover {
     background-color: var(--hover-blue); /* Change background on hover */
     box-shadow: 4px 6px var(--dark-blue); /* Slightly deeper shadow on hover */
 }
-@media (max-width: 768px) {
+@media (max-width: 770px) {
     .bigBoard {
-        width: 100%;
-        height: auto; /* Allow height to adjust based on width */
+        width: 450px;
+        height: 450px; /* Allow height to adjust based on width */
     }
 
     .bigBox {
-        height: 150px;
-        width: 150px;
+        height: 33.3333333333%;
+        width: 33.3333333333%;
         font-size: 100px;
     }
 
     .smallBox {
-        height: 25%; /* Adjust to fit the new dimensions */
-        width: 25%;
+        height: 33.3333333333%;
+        width: 33.3333333333%;
         font-size: 20px;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     h2 {
@@ -180,11 +180,47 @@ button:hover {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px){
+    .bigBoard {
+        width: 360px;
+        height: 360px;
+    }
     .bigBox {
-        height: 100px;
-        width: 100px;
+        height: 33.3333333333%;
+        width: 33.3333333333%;
         font-size: 80px;
+        padding: 13px;
+    }
+    .smallBox {
+        height: 33.3333333333%;
+        width: 33.3333333333%;
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+
+@media (max-width: 431px) {
+    .bigBoard {
+        width: 300px;
+        height: 300px; /* Allow height to adjust based on width */
+    }
+    .bigBox {
+        height: 33.3333333333%;
+        width: 33.3333333333%;
+        font-size: 80px;
+        padding: 13px;
     }
 
     .smallBox {
@@ -194,7 +230,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     h2 {
