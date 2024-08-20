@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #3BB2E2;
+    --orange: #e0d209;
+    --winning-blocks: #07699b;
+    --dark-blue: #035d88; /* Slightly darker blue for shadows */
+    --light-orange: #ffeb3b; /* Lighter shade of orange */
+    --hover-blue: #2A93C1; /* Slightly darker blue for hover effects */
+}
+
+body { 
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+    background-color: #f5f5f5; /* Light background for contrast */
+    padding: 20px;
+    text-align: center; /* Center text alignment */
+}
+
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px var(--dark-blue); /* Enhanced shadow */
+    margin-bottom: 20px; /* Space below the heading */
+    letter-spacing: 2px; /* Increase spacing between letters */
+}
+
+h2 {
+    font-size: 40px;
+    text-shadow: 3px 3px var(--dark-blue); /* Enhanced shadow */
+    margin-bottom: 15px; /* Space below the subheading */
+    letter-spacing: 1px; /* Increase spacing between letters */
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    min-height: 100vh; /* Ensure container height adapts */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blue);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.bigBoard {
+    width: 600px; 
+    height: 600px; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* outline: 5px solid var(--dark-blue); */
+}
+
+.bigBox {
+    color: var(--orange);
+    height: 200px;
+    width: 200px;
+    padding: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    transition: background-color 0.3s ease;
+    /* outline: 4px solid var(--dark-blue); */
+    border: 3px solid var(--dark-blue);
+}
+
+.bigBox:nth-child(1) {
+    border-top-left-radius: 20% ;
+    border-top: 6px solid var(--dark-blue);
+    border-left:  6px solid var(--dark-blue);
+}
+
+.bigBox:nth-child(2) {
+    border-top:  6px solid var(--dark-blue);
+}
+.bigBox:nth-child(3) {
+    border-top-right-radius: 20%;
+    border-top: 6px solid var(--dark-blue);
+    border-right:  6px solid var(--dark-blue);
+}
+.bigBox:nth-child(4) {
+    border-left:  6px solid var(--dark-blue);
+}
+.bigBox:nth-child(6) {
+    border-right:  6px solid var(--dark-blue);
+}
+.bigBox:nth-child(7) {
+    border-bottom-left-radius: 20% ;
+    border-left:  6px solid var(--dark-blue);
+    border-bottom:  6px solid var(--dark-blue);
+}
+.bigBox:nth-child(8) {
+    border-bottom:  6px solid var(--dark-blue);
+}
+.bigBox:nth-child(9) {
+    border-bottom-right-radius: 20% ;
+    border-right:  6px solid var(--dark-blue);
+    border-bottom:  6px solid var(--dark-blue);
+}
+
+.smallBox {
+    background-color: rgb(112, 205, 255);
+    color: var(--orange);
+    height: 33.3333333333%;
+    width: 33.3333333333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: 2px 2px var(--dark-blue);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    outline: 2px solid var(--dark-blue);
+    overflow: hidden;
+}
+
+.smallBox:hover {
+    background-color: var(--hover-blue); /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    outline: 2px solid var(--light-orange);
+}
+
+button {
+    background-color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+    padding: 12px 20px; /* Adjusted padding for a better look */
+    color: var(--blue);
+    font-size: 25px;
+    font-weight: 600;
+    transition: 200ms transform, background-color 0.3s ease; /* Add smooth transition */
+    border-radius: 10px;
+    box-shadow: 4px 4px var(--dark-blue); /* Enhanced shadow for depth */
+    text-shadow: 2px 2px var(--dark-blue);
+    border: none; /* Remove default border */
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-3px) scale(1.03); /* Lift and slightly enlarge on hover */
+    background-color: var(--hover-blue); /* Change background on hover */
+    box-shadow: 4px 6px var(--dark-blue); /* Slightly deeper shadow on hover */
+}
