@@ -148,3 +148,61 @@ button:hover {
     background-color: var(--hover-blue); /* Change background on hover */
     box-shadow: 4px 6px var(--dark-blue); /* Slightly deeper shadow on hover */
 }
+@media (max-width: 768px) {
+    .bigBoard {
+        width: 100%;
+        height: auto; /* Allow height to adjust based on width */
+    }
+
+    .bigBox {
+        height: 150px;
+        width: 150px;
+        font-size: 100px;
+    }
+
+    .smallBox {
+        height: 25%; /* Adjust to fit the new dimensions */
+        width: 25%;
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bigBox {
+        height: 100px;
+        width: 100px;
+        font-size: 80px;
+    }
+
+    .smallBox {
+        height: 33.3333333333%;
+        width: 33.3333333333%;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
